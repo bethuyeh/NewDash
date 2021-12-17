@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<!-- LineAwesome -->
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<!-- Link -->
+<link rel="stylesheet" href="style.css">
+<title>Admin Page</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <input type="checkbox" name="" id="menu-toggle">
+        <div class="sidebar">
+            <div class="brand">
+                <h3><span><i class="lab la-untappd"> BSSHN</i></span></h3>
+               
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-img" style="background-image: url(./Images/secondwoman.jpeg);"></div>
+                <div class="profile-info">
+                    <h2>BSSHN</h2>
+                    <small>Admin Page</small>
+                </div>
+                <div class="profile-action">
+                    <a href="" class="btn btn-white">
+                        <span class="las la-coins"></span>
+                        N2300
+                    </a>
+                </div>
+
+                <div class="profile-icons">
+                        <span class="las la-user"></span>
+                        <span class="las la-comment-alt"></span>
+                        <span class="las la-file-invoice"></span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-home"></span>
+                        <span>Home</span>
+                    </a>
+                </div>
+
+
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-project-diagram"></span>
+                        <span>Projects</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="" class="active">
+                        <span class="las la-tasks"></span>
+                        <span>Tasks</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-columns"></span>
+                        <span>Patients</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-users-cog"></span>
+                        <span>Users</span>
+                    </a>
+                </div>
+
+
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-user-ninja"></span>
+                        <span>Profile</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-file-invoice"></span>
+                        <span>Invoices</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="">
+                        <span class="las la-cogs"></span>
+                        <span>Widgets</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+                <h2>Hello User</h2>
+                <p>You have several tasks to complete today</p>
+                <a href="" class="btn btn-block btn-white">Get Started</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <header>
+            <label for="menu-toggle">
+                <span class="las la-bars"></span>
+            </label>
+
+            <div class="head-icons">
+                <span class="las la-search"></span>
+                <span class="las la-comment-alt"></span>
+                <span class="las la-bell"></span>
+
+                <div class="head-avatar">
+                    <div class="avatar" style="background-image: url(./Images/secondwoman.jpeg);">
+
+                    </div>
+                    <span>John Snow</span>
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="page-header">
+                <h1>Morning User</h1>
+                <small>Have a nice day</small>
+            </div>
+            <div class="analytics">
+                <div class="card engage-card">
+                    <div class="card-head">
+                        Patient Engagement
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="chart-wrapper">
+                            <div id="chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card emails-card">
+                    <div class="card-head">
+                        Patients Admitted
+                    </div>
+                    <div class="card-body">
+                        <div id="emailChart">
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="emails-info">
+                            <div class="email-stat">
+                                <span class="status bg-danger"></span>
+                                <span>30 patients not documented</span>
+                            </div>
+
+                            <div class="email-stat">
+                                <span class="status bg-warning"></span>
+                                <span>57 patients documented</span>
+                            </div>
+
+                            <div class="email-stat">
+                                <span class="status bg-success"></span>
+                                <span>42 patients admitted</span>
+                            </div>
+
+                            <div class="email-stat">
+                                <span class="status bg-danger"></span>
+                                <span>SMTP error</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div class="card team-progress">
+                    <div class="card-head">
+                        <h3>Team Progress</h3>
+                        
+                    </div>
+                    <div class="card-body">
+                        <table>
+                            <thead>
+                            <tr>
+                                
+                                <th>Department</th>
+                                <th>Department Head</th>
+                                <th>Progress</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                                <td>
+                                    <div class="team-info">
+                                       
+                                        <div class="team-details">
+                                            <p>Gynaeocology</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="company-info">
+                                       <p>Dr Ede</p>
+                                    </div>
+                                </td>
+                                <td width="20%">
+                                    <div class="team-progress">
+                                        <h4>65%</h4>
+                                        <div class="progress-bar">
+                                            <div class="indicator warning" style= "width: 65%"> </div>
+                                        </div> 
+                                    </div>    
+                                </td>
+                                <td>
+                                    <a href="" class="btn btn-main">View</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                
+                                <td>
+                                    <div class="team-info">
+                                        
+                                        <div class="team-details">
+                                            <p>Paleonthology</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="company-info">
+                                       <p>Dr Gift</p>
+                                    </div>
+                                </td>
+                                <td width="20%">
+                                    <div class="team-progress">
+                                        <h4>85%</h4>
+                                        <div class="progress-bar">
+                                            <div class="indicator success" style= "width: 85%"> </div>
+                                        </div> 
+                                    </div>    
+                                </td>
+                                <td>
+                                    <a href="" class="btn btn-main">View</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                
+                                <td>
+                                    <div class="team-info">
+                                        
+                                        <div class="team-details">
+                                            <p>Pediatrics</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="company-info">
+                                       <p>Dr Evan</p>
+                                    </div>
+                                </td>
+                                <td width="20%">
+                                    <div class="team-progress">
+                                        <h4>55%</h4>
+                                        <div class="progress-bar">
+                                            <div class="indicator danger" style= "width: 55%"> </div>
+                                        </div> 
+                                    </div>    
+                                </td>
+                                <td>
+                                    <a href="" class="btn btn-main">View</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                               
+                                <td>
+                                    <div class="team-info">
+                                        
+                                        <div class="team-details">
+                                            <p>Surgery</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="company-info">
+                                       <p>Dr Sylvie</p>
+                                    </div>
+                                </td>
+                                <td width="20%">
+                                    <div class="team-progress">
+                                        <h4>75%</h4>
+                                        <div class="progress-bar">
+                                            <div class="indicator success" style= "width: 75%"> </div>
+                                        </div> 
+                                    </div>    
+                                </td>
+                                <td>
+                                    <a href="" class="btn btn-main">View</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card competitors">
+                    <div class="compete-details">
+                        <h4>Pay-roll</h4>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        let options = {
+            chart: {
+                type: 'line',
+                height: "320px",
+                toolbar: {
+                    show: false,
+                }
+            },
+            stroke: {
+            curve: "smooth",
+            width: 8,
+            colors: ["#e7582a"],
+            },
+            markers:{
+                size: 5,
+                colors: ["#ad3838"],
+            },
+            grid: {
+                strokeDashArray: 10,
+            },
+            series: [{
+            name: 'No. of Patients',
+            data: [3,12,16,12,30,19,10,23,9]
+            }],
+            xaxis: {
+            categories: ["Jan","Feb","Mar","April","May","June","Aug", "Sept","Oct","Oct"]
+        }
+    }
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+chart.render();
+
+// Radial Bar
+
+let optionsRadial = {
+          series: [50],
+          chart: {
+          height: 320,
+          type: 'radialBar',
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '50%',
+            },
+            dataLabels: {
+                name: {
+                    show: false,
+                },
+
+                value: {
+                formatter: function(val) {
+                  return parseInt(val);
+                },
+                color: '#777',
+                fontSize: '40px',
+                fontWeight: 500,
+              }
+
+            }
+          },
+        },
+        stroke: {
+            lineCap: "round",
+        },
+        fill: {
+            colors: ["#e4a104"]
+        },
+        labels: [""]
+        };
+
+        let chartRadial = new ApexCharts(document.querySelector("#emailChart"), optionsRadial);
+        chartRadial.render();
+        
+      
+      
+    
+    </script>
+</body>
+</html>
