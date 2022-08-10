@@ -382,7 +382,7 @@ table p {
 .grid-2{
     margin-top: 3.5rem;
     display: grid;
-    grid-template-columns: 65% auto;
+    grid-template-columns: auto auto;
     grid-gap:2rem
 }
 
